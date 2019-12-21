@@ -3,7 +3,7 @@ CCCAT get cookie
 
 Surge 4.0 : [Script]
 https://cccat.io/user/index.php
-http-request https:\/\/\cccat\.io\/user\/index\.php script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/52pojieDailyBonus/Get-Cookie.js
+http-request https:\/\/\cccat\.io\/user\/index\.php script-path=https://raw.githubusercontent.com/1Shaun/Script/master/Get-Cookie.js
 
 MITM = www.cccat.io
 */
