@@ -1,0 +1,6 @@
+#!name=general
+#!desc=general configuration
+#!system=ios
+
+[General]
+ipv6 = true
