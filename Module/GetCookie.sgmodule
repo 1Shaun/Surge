@@ -1,5 +1,6 @@
-
-
+#!name=Get cookie
+#!desc=该模块适用于定时签到脚本的Cookie获取. 集成: 吾爱破解, 爱奇艺, 腾讯视频, 美团签到; 您可以在使用后手动将其禁用，以免产生不必要的MITM.
+#!system=ios
 
 [MITM]
 hostname = %APPEND% *.video.qq.com, i.meituan.com, app.bilibili.com, weather-data.apple.com, common.diditaxi.com.cn, newactivity.huazhu.com, draw.jdfcloud.com, as.xiaojukeji.com, api.1sapp.com, superapp.kiwa-tech.com, activity-1.m.duiba.com.cn, ifac*.iqiyi.com, www.52pojie.cn, passport.biligame.com
