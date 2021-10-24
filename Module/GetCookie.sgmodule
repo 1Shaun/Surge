@@ -1,5 +1,5 @@
-#!name=HostName
-#!desc=常用的HostName
+#!name=Get cookie
+#!desc=该模块适用于定时签到脚本的Cookie获取. 集成: 吾爱破解, 爱奇艺, 腾讯视频, 美团签到; 您可以在使用后手动将其禁用，以免产生不必要的MITM.
 #!system=ios
 
 
