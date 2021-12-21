@@ -1,0 +1,17 @@
+#!name=Get cookie
+#!desc=该模块适用于定时签到,集成: 吾爱破解, 爱奇艺, 腾讯视频, 美团签到.
+#!system=ios
+
+[Script]
+腾讯视频Cookie = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js,type=http-request,pattern=^https:\/\/access.video.qq.com\/user\/auth_refresh
+腾讯视频签到 = type=cron,cronexp=0 7 1 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js,script-update-interval=0
+哔哩哔哩积分兑换 = type=cron,cronexp="10,20,30 0 12 * * *",wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/ExchangePoints.js,script-update-interval=0
+滴滴喝水 = type=cron,cronexp="40 8,20,9-19/2 * * * ",script-path=https://raw.githubusercontent.com/1Shaun/Surge/master/DiDi/DiDi_drink.js,script-update-interval=0
+滴滴睡觉 = type=cron,cronexp="1 6,22 * * * ",script-path=https://raw.githubusercontent.com/1Shaun/Surge/master/DiDi/DiDi_sleep.js,script-update-interval=0
+爱奇艺签到 = type=cron,cronexp=0 9 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+iOS15美标空气质量 = type=http-response,pattern=https://weather-data.apple.com/v2/weather/[\w-]+/-?[0-9]+\.[0-9]+/-?[0-9]+\.[0-9]+\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/1Shaun/Surge/master/iOS15_Weather_AQI_US.js,script-update-interval=0
+net-info-panel = script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tools/Panels/NetInfo/net-info-panel.js,type=generic,script-update-interval=0
+Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info_panel.js,script-update-interval=0,argument=url=https%3A%2F%2Fsubweb.ccsub.site%2Fsub%3Ftarget%3Dsurge%26ver%3D4%26url%3Dhttps%253A%252F%252Fwww.ccsub.cc%252Flink%252FvNzDH9VS8xdBXl7Z%253Fmu%253D4%26insert%3Dfalse%26emoji%3Dtrue%26list%3Dtrue%26udp%3Dfalse%26tfo%3Dfalse%26scv%3Dfalse%26fdn%3Dfalse%26sort%3Dfalse&reset_day=1&title=AmyInfo&icon=bonjour&color=#007aff
+
+[MITM]
+hostname = %APPEND% *.video.qq.com, i.meituan.com, app.bilibili.com, weather-data.apple.com, common.diditaxi.com.cn, newactivity.huazhu.com, draw.jdfcloud.com, as.xiaojukeji.com, api.1sapp.com, superapp.kiwa-tech.com, activity-1.m.duiba.com.cn
